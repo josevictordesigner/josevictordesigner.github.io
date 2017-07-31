@@ -1,0 +1,507 @@
+@charset "UTF-8";
+/* Corpo */
+body {
+  font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  overflow-x: hidden;
+}
+/* Paragráfo */
+p {
+  font-size: 20px;
+}
+p.small {
+  font-size: 16px;
+}
+/* Links */
+a,
+a:hover,
+a:focus,
+a:active,
+a.active {
+  color: #000;
+  outline: none;
+}
+/* Subtítulos */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+/* Separador */
+hr.star-light,
+hr.star-primary {
+  border: none;
+  border-top: solid 5px;  
+  margin: 25px auto 30px;
+  max-width: 250px;
+  padding: 0;
+  text-align: center;
+}
+hr.star-light:after,
+hr.star-primary:after {
+  content: "\f005";
+  display: inline-block;
+  font-family: FontAwesome;
+  font-size: 2em;
+  padding: 0 0.25em;
+  position: relative;
+  top: -0.8em;
+}
+hr.star-light {
+  border-color: #fff;
+}
+hr.star-light:after {
+  background-color: #000;
+  color: #fff;
+}
+hr.star-primary {
+  border-color: #000;
+}
+hr.star-primary:after {
+  background-color: #fff;
+  color: #000;
+}
+.img-centered {
+  margin: 0 auto;
+}
+/* Cabeçalho */
+header {
+  background-image: url(../img/background.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #fff;
+  text-align: center;
+}
+header .container {
+  padding-bottom: 50px;
+  padding-top: 100px;
+}
+header img {
+  display: block;
+  margin: 0 auto 20px;
+}
+header .intro-text .name {
+  display: block;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 2em;  
+  text-transform: uppercase;
+  font-weight: 700;
+}
+header .intro-text .skills {
+  font-size: 1.25em;
+  font-weight: 300;
+}
+@media (min-width: 768px) {
+  header .container {
+    padding-bottom: 100px;
+    padding-top: 200px;
+  }
+  header .intro-text .name {
+    font-size: 4.75em;
+  }
+  header .intro-text .skills {
+    font-size: 1.75em;
+  }
+}
+/* Menu */
+.navbar-custom {
+  background: #000;
+  border: none;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.navbar-custom a:focus {
+  outline: none;
+}
+.navbar-custom .navbar-brand {
+  color: #fff;
+}
+.navbar-custom .navbar-brand:hover,
+.navbar-custom .navbar-brand:focus,
+.navbar-custom .navbar-brand:active,
+.navbar-custom .navbar-brand.active {
+  color: #fff;
+}
+.navbar-custom .navbar-nav {
+  letter-spacing: 1px;
+}
+.navbar-custom .navbar-nav li a {
+  color: #fff;
+}
+.navbar-custom .navbar-nav li a:hover {
+  color: #fff;
+  outline: none;
+}
+.navbar-custom .navbar-nav li a:focus,
+.navbar-custom .navbar-nav li a:active {
+  color: #fff;
+}
+.navbar-custom .navbar-nav li.active a {
+  background: #fff;
+  color: #000;
+}
+.navbar-custom .navbar-nav li.active a:hover,
+.navbar-custom .navbar-nav li.active a:focus,
+.navbar-custom .navbar-nav li.active a:active {
+  background: #fff;
+  color: #000;
+}
+/* Mobile */
+.navbar-custom .navbar-toggle {
+  color: #000;
+  font-size: 10px;
+  text-transform: uppercase;
+}
+.navbar-custom .navbar-toggle:hover,
+.navbar-custom .navbar-toggle:focus {
+  background-color: #fff;
+  border-color: #fff;
+  color: #000;  
+}
+@media (min-width: 768px) {
+  .navbar-custom {
+    padding: 25px 0;
+    transition: padding 0.3s;
+  }
+  .navbar-custom .navbar-brand {
+    font-size: 2em;
+    transition: all 0.3s;
+  }
+  .navbar-custom.affix {
+    padding: 10px 0;
+  }
+  .navbar-custom.affix .navbar-brand {
+    font-size: 1.5em;
+  }
+}
+/* Seções */
+section {
+  padding: 100px 0;
+}
+section h2 {
+  font-size: 3em;
+  margin: 0;
+}
+section.success {
+  background: #000;
+  color: #fff;
+}
+@media (max-width: 767px) {
+  section {
+    padding: 75px 0;
+  }
+  section.first {
+    padding-top: 75px;
+  }
+}
+/* Portfólio */
+#portfolio .portfolio-item {
+  margin: 0 0 15px;
+  right: 0;
+}
+#portfolio .portfolio-item .portfolio-link {
+  display: block;
+  max-width: 400px;
+  margin: 0 auto;  
+  position: relative;
+}
+#portfolio .portfolio-item .portfolio-link .caption {
+  background: rgba(0,0,0, 0.6);
+  height: 100%;
+  opacity: 0;
+  position: absolute;
+  transition: all ease 0.5s;
+  width: 100%;
+}
+#portfolio .portfolio-item .portfolio-link .caption:hover {
+  opacity: 1;
+}
+#portfolio .portfolio-item .portfolio-link .caption .caption-content {
+  color: #fff;  
+  font-size: 20px;
+  height: 20px;
+  margin-top: -12px;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  width: 100%;
+}
+#portfolio .portfolio-item .portfolio-link .caption .caption-content strong {
+  color: #ff0;
+}
+#portfolio .portfolio-item .portfolio-link .caption .caption-content i {
+  margin-top: -12px;
+}
+#portfolio .portfolio-item .portfolio-link .caption .caption-content h3,
+#portfolio .portfolio-item .portfolio-link .caption .caption-content h4 {
+  margin: 0;
+}
+#portfolio * {
+  z-index: 2;
+}
+@media (min-width: 767px) {
+  #portfolio .portfolio-item {
+    margin: 0 0 30px;
+  }
+}
+/* Formulário */
+.floating-label-form-group {
+  margin-bottom: 0;
+  padding-bottom: 0.5em;
+  position: relative;
+}
+.floating-label-form-group input,
+.floating-label-form-group textarea {
+  background: none;
+  border: 1px solid #000;
+  border-radius: 5px;
+  box-shadow: none;
+  font-size: 1.5em;
+  padding-left: 10px;
+  padding-right: 0;
+  position: relative;
+  resize: none;
+  z-index: 1;
+}
+.floating-label-form-group label {
+  display: block;
+  font-size: 0.85em;
+  line-height: 1.764705882em;
+  margin: 0;
+  position: relative;
+  opacity: 0;
+  transition: top 0.3s ease,opacity 0.3s ease;
+  top: 2em;
+  vertical-align: baseline;
+  vertical-align: middle;
+  z-index: 0;
+
+}
+.floating-label-form-group:not(:first-child) {
+  padding-left: 14px;
+}
+.floating-label-form-group-with-value label {
+  opacity: 1;  
+  top: 0;
+}
+.floating-label-form-group-with-focus label {
+  color: #18B;
+}
+/* Rodapé */
+footer {
+  background-color: #000;
+  color: #fff;
+}
+footer .footer-above {
+  padding-top: 50px;
+  background-color: #000;
+}
+footer .footer-col {
+  margin-bottom: 50px;
+}
+footer .footer-below {
+  background-color: #fff;
+  color: #000;  
+  font-size: 16px;
+  padding: 25px 0;
+}
+/* Projetos Botão de Fechar */
+.btn-default {
+  background-color: #000;
+  border: 1px solid #000;
+  color: #fff;
+}
+.btn-default:hover {
+  background-color: #fff;
+  border: 1px solid #000;
+  color: #000;
+}
+.btn-outline {
+  color: #fff;
+  font-size: 20px;
+  border: solid 2px #fff;
+  background: transparent;
+  transition: all 0.3s ease-in-out;
+  margin-top: 15px;
+}
+.btn-outline:hover,
+.btn-outline:focus,
+.btn-outline:active,
+.btn-outline.active {
+  color: #000;
+  background: #fff;
+  border: solid 2px #fff;
+}
+.btn-primary {
+  color: #fff;
+  background-color: #000;
+  border-color: #000;
+  font-weight: 700;
+}
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active,
+.open .dropdown-toggle.btn-primary {
+  color: #fff;
+  background-color: #000;
+  border-color: #000;
+}
+.btn-primary:active,
+.btn-primary.active,
+.open .dropdown-toggle.btn-primary {
+  background-image: none;
+}
+.btn-primary.disabled,
+.btn-primary[disabled],
+fieldset[disabled] .btn-primary,
+.btn-primary.disabled:hover,
+.btn-primary[disabled]:hover,
+fieldset[disabled] .btn-primary:hover,
+.btn-primary.disabled:focus,
+.btn-primary[disabled]:focus,
+fieldset[disabled] .btn-primary:focus,
+.btn-primary.disabled:active,
+.btn-primary[disabled]:active,
+fieldset[disabled] .btn-primary:active,
+.btn-primary.disabled.active,
+.btn-primary[disabled].active,
+fieldset[disabled] .btn-primary.active {
+  background-color: green;
+  border-color: #000;
+}
+.btn-primary .badge {
+  color: #000;
+  background-color: #fff;
+}
+.btn-success {
+  color: #fff;
+  background-color: green;
+  border-color: #000;
+  font-weight: 700;
+}
+.btn-success:hover,
+.btn-success:focus,
+.btn-success:active,
+.btn-success.active,
+.open .dropdown-toggle.btn-success {
+  color: #fff;
+  background-color: green;
+  border-color: #666;
+}
+.btn-success:active,
+.btn-success.active,
+.open .dropdown-toggle.btn-success {
+  background-image: none;
+}
+.btn-success.disabled,
+.btn-success[disabled],
+fieldset[disabled] .btn-success,
+.btn-success.disabled:hover,
+.btn-success[disabled]:hover,
+fieldset[disabled] .btn-success:hover,
+.btn-success.disabled:focus,
+.btn-success[disabled]:focus,
+fieldset[disabled] .btn-success:focus,
+.btn-success.disabled:active,
+.btn-success[disabled]:active,
+fieldset[disabled] .btn-success:active,
+.btn-success.disabled.active,
+.btn-success[disabled].active,
+fieldset[disabled] .btn-success.active {
+  background-color: green;
+  border-color: #666;
+}
+.btn-success .badge {
+  color: green;
+  background-color: #fff;
+}
+.btn-social {
+  display: inline-block;
+  height: 50px;
+  width: 50px;
+  border: 2px solid #fff;
+  border-radius: 100%;
+  text-align: center;
+  font-size: 20px;
+  line-height: 45px;
+}
+.btn:focus,
+.btn:active,
+.btn.active {
+  outline: none;
+}
+.scroll-top {
+  position: fixed;
+  right: 2%;
+  bottom: 2%;
+  width: 50px;
+  height: 50px;
+  z-index: 1049;
+}
+.scroll-top .btn {
+  font-size: 20px;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  line-height: 28px;
+}
+.scroll-top .btn:focus {
+  outline: none;
+}
+.portfolio-modal .modal-content {
+  border-radius: 0;
+  background-clip: border-box;
+  box-shadow: none;
+  border: none;
+  min-height: 100%;
+  padding: 100px 0;
+  text-align: center;
+}
+.portfolio-modal .modal-content h2 {
+  margin: 0;
+  font-size: 3em;
+}
+.portfolio-modal .modal-content img {
+  margin-bottom: 30px;
+}
+.portfolio-modal .modal-content .item-details {
+  margin: 30px 0;
+}
+.portfolio-modal .close-modal {
+  background-color: transparent;
+  cursor: pointer; 
+  height: 75px;
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  width: 75px;
+}
+.portfolio-modal .close-modal:hover {
+  opacity: 0.3;
+}
+.portfolio-modal .close-modal .lr {
+  background-color: #2C3E50;
+  height: 75px;
+  margin-left: 35px;
+  transform: rotate(45deg);
+  width: 1px;
+  z-index: 1051;
+}
+.portfolio-modal .close-modal .lr .rl {
+  background-color: #2C3E50;
+  height: 75px;
+  transform: rotate(90deg);
+  width: 1px;
+  z-index: 1052;
+  
+}
+.portfolio-modal .modal-backdrop {  
+  display: none;
+  opacity: 0;
+}

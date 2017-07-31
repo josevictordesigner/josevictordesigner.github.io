@@ -1,66 +1,492 @@
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
+    <!--Meta Tags -->
     <meta charset="UTF-8" />
-    <!-- Meta Tags -->
-    <meta name="description" content="Portfólio do Designer Gráfico e Web Designer de Campinas" />
-    <meta name="keywords" content="campinas, design, designer, gráfico, freelancer, portfólio, web" />
-    <meta name="robots" content="index, follow" />
+    <meta name="description" content="Portfólio de Design Gráfico e Web Design" />
+    <meta name="keywords" content="design, gráfico, portfólio, web" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <!-- Favicon e Titulo -->
-    <link rel="icon" href="_img/favicon.png" />
-    <title>José Victor - Designer Gráfico &amp; Web</title>
+    <!-- Open Graph -->
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:site_name" content="José Victor - Portfólio" />
+    <meta property="og:url" content="http://www.josevictordesign.com.br" />
+    <meta property="og:description" content="Porfólio de Design Gráfico e Web Design" />
+    <meta property="og:type" content="website" />
+    <!-- Favicon e Título -->
+    <link rel="icon" href="img/favicon.png" />
+    <title>José Victor - Portfólio</title>
     <!-- Folhas de Estilo -->
-    <link rel="stylesheet" href="_css/reset.css" />
-    <link rel="stylesheet" href="_css/estilo.css" />
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.css" />
+    <link rel="stylesheet" href="css/estilos.css" />
+    <!-- Fontes Externas -->
+    <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.css" />
+    <link rel="stylesheet" href="css/fonts.css" />
   </head>
-  <body>
+  <body id="page-top" class="index">
+    <!-- Navegação -->
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
+        <div class="container">
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                  <span class="sr-only"></span>
+                  <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand" href="#page-top">José Victor</a>
+            </div>
+            <!-- Menu Mobile -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#portfolio">Portfólio</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#sobre">Sobre Mim</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#contato">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
     <!-- Cabeçalho -->
-    <header id="cabecalho">
-      <h1>José Victor</h1>
-      <h2>Designer Gráfico &amp; Web</h2>
-      <!-- Menu de Navegação -->
-      <nav id="menu">
-        <ul>
-          <li><a href="#portfolio">Portfólio</a></li>
-          <li><a href="#servicos">Serviços</a></li>
-          <li><a href="#sobre">Sobre Mim</a></li>
-          <li><a href="#contato">Contato</a></li>
-        </ul>
-      </nav>
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <img class="img-responsive" src="img/profile.png" alt="">
+                    <div class="intro-text">
+                        <span class="name">José Victor</span>
+                        <hr class="star-light">
+                        <span class="skills">Designer Gráfico &amp; Web </span>
+                    </div>
+                </div>
+            </div>
+        </div>
     </header>
-    <!-- Seção Portfólio -->
+    <!-- Portfolio Seção -->
     <section id="portfolio">
-      <h3>Portfólio</h3>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Portfólio</h2>
+                    <hr class="star-primary">
+                </div>
+            </div>
+            <!-- Portfólio Item 1 -->
+            	<div class="col-sm-4 portfolio-item">
+                	<a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+                    	<div class="caption">
+                        	<div class="caption-content">
+                              <strong>Cartão de Visita</strong>
+                              <p>Célia Trevizan</p>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/celia-card/cartao-final.jpeg" class="img-responsive" alt="Cartão de Visita" />
+                    </a>
+                </div>
+                <!-- Portfólio Item 2 -->
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                              <strong>Marcador de Página</strong>
+                              <p>Igreja Metodista</p>
+                            </div>
+                        </div>
+                        <img src="img/portfolio//bookmark/bookmark1.png" class="img-responsive" alt="Marcador de Páginas" />
+                    </a>
+                </div>
+                <!-- Portfólio Item 3 -->
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <strong>Folheto</strong>
+                                <p>Tinata Panquecas</p>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/tinata-panquecas/tinata-panqueca.png" class="img-responsive" alt="Tinata Panquecas" />
+                    </a>
+                </div>
+                <!-- Portfólio Item 4 -->
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                              <strong>Ícones Olímpicos</strong>
+                              <p>Projeto Acadêmico</p>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/icones-olimpicos/icones.png" class="img-responsive" alt="Ícones Olimpícos" />
+                    </a>
+                </div>
+                <!-- Portfólio Item 5 -->
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                              <strong>Outdoor Moda Praia</strong>
+                              <p>Projeto Acadêmico</p>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/outdoor-cea/outdoor-final.png" class="img-responsive" alt="Outdoor Moda Praia" />
+                    </a>
+             </div>
+             <!-- Portfólio Item 6 -->
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                              <strong>Outdoor Exposição de Vestidos</strong>
+                              <p>Projeto Acadêmico</p>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/outdoor-noiva/outdoor-final.png" class="img-responsive" alt="Outdoor Vestido de Noivas" />
+                    </a>
+             </div>
+    	</div>
     </section>
-    <!-- Serviços -->
-    <section id="servicos">
-      <h3>Serviços</h3>
+    <!-- Sessão Sobre -->
+    <section class="success" id="sobre">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Sobre Mim</h2>
+                    <hr class="star-light">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-lg-offset-2">
+                    <p>Oi, eu sou o José Victor, tenho 25 anos e residente na cidade de Campinas/SP e sou graduado em Design Gráfico e também tenho experiências com Web Design.</p>
+                </div>
+                <div class="col-lg-4">
+                    <p>Aqui eu irei expor meus projetos realizados para clientes dos mais diversos segmentos profissionais, além de projetos acadêmicos, pessoais e também voluntários.</p>
+                </div>
+            </div>
+        </div>
     </section>
-    <!-- Sobre Mim -->
-    <section id="sobre">
-      <h3>Sobre Mim</h3>
-    </section>
-    <!-- Contato -->
+    <!-- Seção Contato -->
     <section id="contato">
-      <h3>Contato</h3>
-      <!-- Formulário -->
-      <form action="contato.php" method="post">
-        <label for="nome">Nome</label>
-        <input id="nome" name="nome" type="text" required>
-        <label for="email">E-mail</label>
-        <input id="email" name="email" type="email" required>
-        <label for="mensagem">Mensagem</label>
-        <textarea name="mensagem"></textarea>
-        <input type="submit" value="Enviar" />
-      </form>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Contato</h2>
+                    <hr class="star-primary">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <form name="sentMessage" id="contactForm" novalidate>
+                        <div class="row control-group">
+                            <div class="form-group col-xs-12 floating-label-form-group controls">
+                                <label>Nome</label>
+                                <input type="text" class="form-control" id="nome" name="nome" placeholder="Seu Nome" required data-validation-required-message="Por favor insira seu nome." />
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+                        <div class="row control-group">
+                            <div class="form-group col-xs-12 floating-label-form-group controls">
+                                <label>Email</label>
+                                <input type="email" class="form-control" id="email" name="email" placeholder="seu@email.com" />
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+                        <div class="row control-group">
+                            <div class="form-group col-xs-12 floating-label-form-group controls">
+                                <label>Telefone</label>
+                                <input type="tel" class="form-control" id="tel" name="tel" placeholder="Seu Número de Telefone" />
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+                        <div class="row control-group">
+                            <div class="form-group col-xs-12 floating-label-form-group controls">
+                                <label>Mensagem</label>
+                                <textarea rows="5" class="form-control" id="mensagem" name="mensagem" placeholder="Sua Mensagem" required data-validation-required-message="Por favor escreva sua mensagem."></textarea>
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+                        <br>
+                        <div id="success"></div>
+                        <div class="row">
+                            <div class="form-group col-xs-12">
+                                <button type="submit" class="btn btn-success btn-lg">Enviar</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
     </section>
     <!-- Rodapé -->
-    <footer id="rodape">
-      <p>&copy; 2018 - José Victor</p>
-      <a href="#" target="_blank">Facebook</a>
-      <a href="#" target="_blank">GitHub</a>
-      <a href="#" target="_blank">Linkedin</a>
+    <footer class="text-center">
+        <div class="footer-above">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col col-md-6">
+                      <h3>Outros Contatos</h3>
+                      <p><i class="fa fa-envelope"></i> jv.lopes@live.com</p>
+                      <p><i class="fa fa-phone"></i> (019) 2512-1919</p>
+                      <p><i class="fa fa-mobile-phone"></i> (019) 97132-3755 <i class="fa fa-whatsapp"></i></p>
+                    </div>
+                    <div class="footer-col col-md-6">
+                        <h3>Perfis na Internet</h3>
+                        <ul class="list-inline">
+                             <li>
+                              	<a href="https://br.linkedin.com/in/jvdesigner" class="btn-social btn-outline">
+                               		<i class="fa fa-fw fa-linkedin"></i>
+                              	</a>
+                            </li>
+                            <li>
+                            	<a href="http://www.facebook.com.br/jvr.lopes" class="btn-social btn-outline">
+                            		<i class="fa fa-fw fa-facebook"></i>	
+                            	</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-below">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12, text-left">
+                        &copy; José Victor - Todos Os Direitos Reservados
+                    </div>
+                </div>
+            </div>
+        </div>
     </footer>
+    <!-- Ir ao Topo Para Disponiveis de Moveis -->
+    <div class="scroll-top page-scroll hidden-sm hidden-xs hidden-lg hidden-md">
+        <a class="btn btn-primary" href="#page-top">
+            <i class="fa fa-chevron-up"></i>
+        </a>
+    </div>
+    <!-- Portfólio Item 1 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Cartão de Visitas</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/celia-card/cartao-final.jpeg" class="img-responsive img-centered" alt="Cartão de Visitas" />
+                            <img src="img/portfolio/celia-card/cartao-visitas.png" class="img-responsive img-centered" alt="Cartão de Visitas" />
+                            <p>Desenvolvimento de cartão de visitas para uma psicóloga.</p>
+                            <ul class="list-inline item-details">
+                                <li>Cliente:
+									<strong>Célia Trevizan</strong>
+                                </li>
+                                <li>Data:
+                                    <strong>Janeiro 2017</strong>
+                                </li>
+                                <li>Serviço:
+                                    <strong>Design Editorial</strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Fechar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Portfólio Item 2 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Marcador de Página</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/bookmark/bookmark1.png" class="img-responsive img-centered" alt="Marcador de Páginas" />
+                            <img src="img/portfolio/bookmark/bookmark2.svg" class="img-responsive img-centered" alt="Marcador de Páginas" />
+                            <p>Diagramação de um novo marcador de páginas.</p>
+                            <ul class="list-inline item-details">
+                                <li>Cliente:
+                                    <strong>Igreja Metodista (Projeto Voluntário)</strong>
+                                </li>
+                                <li>Data:
+                                    <strong>Dezembro 2016</strong>
+                                </li>
+                                <li>Serviço:
+                                    <strong>Editorial</strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Fechar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+     <!-- Portfólio Item 3 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Tinata Panquecas</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/tinata-panquecas/tinata-panqueca.png" class="img-responsive img-centered" alt="Tinata Panquecas" />
+                            <img src="img/portfolio/tinata-panquecas/folheto-tinata.svg" class="img-responsive img-centered" alt="Tinata Panquecas" />
+                            <p>Folheto criado para uma profissional autônoma que faz panquecas artesanais congeladas sobre encomenda.</p>
+                            <ul class="list-inline item-details">
+                                <li>Cliente:
+                                    <strong>Tinata Panquecas</strong>
+                                </li>
+                                <li>Data:
+                                    <strong>Novembro 2016</strong>
+                                </li>
+                                <li>Serviço:
+                                    <strong>Editorial</strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Fechar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Portfólio Item 4 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Ícones Olimpícos</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/icones-olimpicos/icones.svg" class="img-responsive img-centered" alt="Ícones Olimpicos" />
+                            <p>Projeto ícones referente a 20 modalidades dos Jogos Olimpicos, usando como base as cores e formas da bandeira.</p>
+                            <ul class="list-inline item-details">
+                                <li>Cliente:
+                                    <strong>Projeto Acadêmico</strong>
+                                </li>
+                                <li>Data:
+                                    <strong>Outubro 2016</strong>
+                                </li>
+                                <li>Serviço:
+                                    <strong>Ilustração</strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Fechar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+     <!-- Portfólio Item 5 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Outdoor Moda Praia</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/outdoor-cea/outdoor-final.png" class="img-responsive img-centered" alt="Outdoor" />
+                            <img src="img/portfolio/outdoor-cea/outdoor.png" class="img-responsive img-centered" alt="Outdoor" />
+                            <p>Projeto referente a criação de um outdoor com a temática de anunciar os produtos da linha moda praia da C&amp;A.</p>
+                            <ul class="list-inline item-details">
+                                <li>Cliente:
+                                    <strong>Projeto Acadêmico</strong>
+                                </li>
+                                <li>Data:
+                                    <strong>Setembro 2016</strong>
+                                </li>
+                                <li>Serviço:
+                                    <strong>Editorial</strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Fechar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Portfólio Item 6 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Outdoor Exposição Vestido de Noivas</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/outdoor-noiva/outdoor-final.png" class="img-responsive img-centered" alt="Outdoor" />
+                            <img src="img/portfolio/outdoor-noiva/outdoor.png" class="img-responsive img-centered" alt="Outdoor" />
+                            <p>Outdoor projetado para anunciar uma exposição de vestidos de noivas.</p>
+                            <ul class="list-inline item-details">
+                                <li>Cliente:
+                                    <strong>Projeto Acadêmico</strong>
+                                </li>
+                                <li>Data:
+                                    <strong>Setembro 2016</strong>
+                                </li>
+                                <li>Serviço:
+                                    <strong>Editorial</strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Fechar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Scripts -->
+    <script src="vendor/jquery/jquery.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contato.js"></script>
+    <script src="js/portfolio.js"></script>
   </body>
 </html>
