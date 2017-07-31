@@ -2,8 +2,65 @@
 <html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
-    <title>José Victor - Portfólio</title>
+    <!-- Meta Tags -->
+    <meta name="description" content="Portfólio do Designer Gráfico e Web Designer de Campinas" />
+    <meta name="keywords" content="campinas, design, designer, gráfico, freelancer, portfólio, web" />
+    <meta name="robots" content="index, follow" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Favicon e Titulo -->
+    <link rel="icon" href="_img/favicon.png" />
+    <title>José Victor - Designer Gráfico &amp; Web</title>
+    <!-- Folhas de Estilo -->
+    <link rel="stylesheet" href="_css/reset.css" />
+    <link rel="stylesheet" href="_css/estilo.css" />
   </head>
   <body>
+    <!-- Cabeçalho -->
+    <header id="cabecalho">
+      <h1>José Victor</h1>
+      <h2>Designer Gráfico &amp; Web</h2>
+      <!-- Menu de Navegação -->
+      <nav id="menu">
+        <ul>
+          <li><a href="#portfolio">Portfólio</a></li>
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#sobre">Sobre Mim</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- Seção Portfólio -->
+    <section id="portfolio">
+      <h3>Portfólio</h3>
+    </section>
+    <!-- Serviços -->
+    <section id="servicos">
+      <h3>Serviços</h3>
+    </section>
+    <!-- Sobre Mim -->
+    <section id="sobre">
+      <h3>Sobre Mim</h3>
+    </section>
+    <!-- Contato -->
+    <section id="contato">
+      <h3>Contato</h3>
+      <!-- Formulário -->
+      <form action="contato.php" method="post">
+        <label for="nome">Nome</label>
+        <input id="nome" name="nome" type="text" required>
+        <label for="email">E-mail</label>
+        <input id="email" name="email" type="email" required>
+        <label for="mensagem">Mensagem</label>
+        <textarea name="mensagem"></textarea>
+        <input type="submit" value="Enviar" />
+      </form>
+    </section>
+    <!-- Rodapé -->
+    <footer id="rodape">
+      <p>&copy; 2018 - José Victor</p>
+      <a href="#" target="_blank">Facebook</a>
+      <a href="#" target="_blank">GitHub</a>
+      <a href="#" target="_blank">Linkedin</a>
+    </footer>
   </body>
 </html>
