@@ -1,29 +1,36 @@
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
-    <!--Meta Tags -->
     <meta charset="UTF-8" />
-    <meta name="description" content="Portfólio de Design Gráfico e Web Design" />
-    <meta name="keywords" content="design, gráfico, portfólio, web" />
+    <meta name="author" content="José Victor" />
+    <meta name="description" content="Portfólio projetos de Design Gráfico e Web" />
+    <meta name="keywords" content="design, gráfico, portfólio, web, web design" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <!-- Open Graph -->
-    <meta property="og:locale" content="pt_BR">
+
+    <link rel="icon" href="img/favicon.png" />
+    <title>José Victor - Designer Gráfico &amp; Web</title>
+
+    <meta property="og:title" content="José Victor - Designer Gráfico e Web" />
+    <meta property="og:locale" content="pt_BR" />
     <meta property="og:site_name" content="José Victor - Portfólio" />
-    <meta property="og:url" content="http://www.josevictordesign.com.br" />
+    <meta property="og:url" content="http://www.josevictord.github.io" />
     <meta property="og:description" content="Porfólio de Design Gráfico e Web Design" />
     <meta property="og:type" content="website" />
-    <!-- Favicon e Título -->
-    <link rel="icon" href="img/favicon.png" />
-    <title>José Victor - Portfólio</title>
-    <!-- Folhas de Estilo -->
+    <meta property="og:image" content="http://www.josevictord.github.io/img/facebook.jpg" />
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:width" content="800">
+    <meta property="og:image:height" content="600">
+
     <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.css" />
     <link rel="stylesheet" href="css/estilos.css" />
-    <!-- Fontes Externas -->
+
     <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato|Roboto" />
+
   </head>
+
   <body id="page-top" class="index">
-    <!-- Navegação -->
+
     <nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
         <div class="container">
             <div class="navbar-header page-scroll">
@@ -33,7 +40,7 @@
                 </button>
                 <a class="navbar-brand" href="#page-top">José Victor</a>
             </div>
-            <!-- Menu Mobile -->
+            <!-- Menu -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li class="hidden">
@@ -54,90 +61,90 @@
     </nav>
     <!-- Cabeçalho -->
     <header>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <img class="img-responsive" src="img/eu.png" alt="Eu" />
-                    <div class="intro-text">
-                        <span class="name">José Victor</span>
-                        <hr class="star-light">
-                        <span class="skills">Designer Gráfico &amp; Web </span>
-                    </div>
-                </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <img class="img-responsive" src="img/eu.png" alt="Eu" />
+            <div class="intro-text">
+              <span class="name">José Victor</span>
+              <hr class="star-light" />
+              <span class="skills">Designer Gráfico &amp; Web </span>
             </div>
+          </div>
         </div>
+      </div>
     </header>
     <!-- Portfolio Seção -->
     <section id="portfolio">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>Portfólio</h2>
-                    <hr class="star-primary">
-                </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2>Portfólio</h2>
+            <hr class="star-primary" />
+          </div>
+        </div>
+        <!-- Portfólio Item 1 -->
+        <div class="col-sm-4 portfolio-item">
+          <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+            <div class="caption">
+              <div class="caption-content">
+                <strong>Cartão de Visita</strong>
+                <p>Célia Trevizan</p>
+              </div>
             </div>
-            <!-- Portfólio Item 1 -->
-            	<div class="col-sm-4 portfolio-item">
-                	<a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
-                    	<div class="caption">
-                        	<div class="caption-content">
-                              <strong>Cartão de Visita</strong>
-                              <p>Célia Trevizan</p>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/celia-card/cartao-final.jpeg" class="img-responsive" alt="Cartão de Visita" />
-                    </a>
-                </div>
-                <!-- Portfólio Item 2 -->
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                              <strong>Marcador de Página</strong>
-                              <p>Igreja Metodista</p>
-                            </div>
-                        </div>
-                        <img src="img/portfolio//bookmark/bookmark1.png" class="img-responsive" alt="Marcador de Páginas" />
-                    </a>
-                </div>
-                <!-- Portfólio Item 3 -->
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <strong>Folheto</strong>
-                                <p>Tinata Panquecas</p>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/tinata-panquecas/tinata-panqueca.png" class="img-responsive" alt="Tinata Panquecas" />
-                    </a>
-                </div>
-                <!-- Portfólio Item 4 -->
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                              <strong>Ícones Olímpicos</strong>
-                              <p>Projeto Acadêmico</p>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/icones-olimpicos/icones.png" class="img-responsive" alt="Ícones Olimpícos" />
-                    </a>
-                </div>
-                <!-- Portfólio Item 5 -->
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                              <strong>Outdoor Moda Praia</strong>
-                              <p>Projeto Acadêmico</p>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/outdoor-cea/outdoor-final.png" class="img-responsive" alt="Outdoor Moda Praia" />
-                    </a>
-             </div>
-             <!-- Portfólio Item 6 -->
-                <div class="col-sm-4 portfolio-item">
+            <img src="img/portfolio/celia-card/cartao-final.jpeg" class="img-responsive" alt="Cartão de Visita" />
+          </a>
+        </div>
+        <!-- Portfólio Item 2 -->
+        <div class="col-sm-4 portfolio-item">
+          <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+            <div class="caption">
+              <div class="caption-content">
+                <strong>Marcador de Página</strong>
+                <p>Igreja Metodista</p>
+              </div>
+            </div>
+            <img src="img/portfolio//bookmark/bookmark1.png" class="img-responsive" alt="Marcador de Páginas" />
+          </a>
+        </div>
+        <!-- Portfólio Item 3 -->
+        <div class="col-sm-4 portfolio-item">
+          <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
+           <div class="caption">
+            <div class="caption-content">
+              <strong>Folheto</strong>
+              <p>Tinata Panquecas</p>
+            </div>
+            </div>
+            <img src="img/portfolio/tinata-panquecas/tinata-panqueca.png" class="img-responsive" alt="Tinata Panquecas" />
+          </a>
+        </div>
+        <!-- Portfólio Item 4 -->
+        <div class="col-sm-4 portfolio-item">
+          <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
+            <div class="caption">
+              <div class="caption-content">
+                <strong>Ícones Olímpicos</strong>
+                <p>Projeto Acadêmico</p>
+              </div>
+            </div>
+            <img src="img/portfolio/icones-olimpicos/icones.png" class="img-responsive" alt="Ícones Olimpícos" />
+          </a>
+        </div>
+        <!-- Portfólio Item 5 -->
+        <div class="col-sm-4 portfolio-item">
+          <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
+            <div class="caption">
+              <div class="caption-content">
+                <strong>Outdoor Moda Praia</strong>
+                <p>Projeto Acadêmico</p>
+              </div>
+            </div>
+            <img src="img/portfolio/outdoor-cea/outdoor-final.png" class="img-responsive" alt="Outdoor Moda Praia" />
+            </a>
+          </div>
+          <!-- Portfólio Item 6 -->
+            <div class="col-sm-4 portfolio-item">
                     <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
                         <div class="caption">
                             <div class="caption-content">
@@ -150,7 +157,7 @@
              </div>
     	</div>
     </section>
-    <!-- Sessão Sobre -->
+    <!-- Secão Sobre -->
     <section class="success" id="sobre">
         <div class="container">
             <div class="row">
@@ -180,9 +187,10 @@
             </div>
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2">
+                  <!-- Formulário -->
                     <form name="sentMessage" id="contactForm" novalidate>
-                        <div class="row control-group">
-                            <div class="form-group col-xs-12 floating-label-form-group controls">
+                      <div class="row control-group">
+                        <div class="form-group col-xs-12 floating-label-form-group controls">
                                 <label>Nome</label>
                                 <input type="text" class="form-control" id="nome" name="nome" placeholder="Seu Nome" required data-validation-required-message="Por favor insira seu nome." />
                                 <p class="help-block text-danger"></p>
@@ -192,13 +200,6 @@
                             <div class="form-group col-xs-12 floating-label-form-group controls">
                                 <label>Email</label>
                                 <input type="email" class="form-control" id="email" name="email" placeholder="seu@email.com" />
-                                <p class="help-block text-danger"></p>
-                            </div>
-                        </div>
-                        <div class="row control-group">
-                            <div class="form-group col-xs-12 floating-label-form-group controls">
-                                <label>Telefone</label>
-                                <input type="tel" class="form-control" id="tel" name="tel" placeholder="Seu Número de Telefone" />
                                 <p class="help-block text-danger"></p>
                             </div>
                         </div>
