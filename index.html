@@ -188,36 +188,13 @@
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2">
                   <!-- Formulário -->
-                    <form name="sentMessage" id="contactForm" novalidate>
-                      <div class="row control-group">
-                        <div class="form-group col-xs-12 floating-label-form-group controls">
-                                <label>Nome</label>
-                                <input type="text" class="form-control" id="nome" name="nome" placeholder="Seu Nome" required data-validation-required-message="Por favor insira seu nome." />
-                                <p class="help-block text-danger"></p>
-                            </div>
-                        </div>
-                        <div class="row control-group">
-                            <div class="form-group col-xs-12 floating-label-form-group controls">
-                                <label>Email</label>
-                                <input type="email" class="form-control" id="email" name="email" placeholder="seu@email.com" />
-                                <p class="help-block text-danger"></p>
-                            </div>
-                        </div>
-                        <div class="row control-group">
-                            <div class="form-group col-xs-12 floating-label-form-group controls">
-                                <label>Mensagem</label>
-                                <textarea rows="5" class="form-control" id="mensagem" name="mensagem" placeholder="Sua Mensagem" required data-validation-required-message="Por favor escreva sua mensagem."></textarea>
-                                <p class="help-block text-danger"></p>
-                            </div>
-                        </div>
-                        <br>
-                        <div id="success"></div>
-                        <div class="row">
-                            <div class="form-group col-xs-12">
-                                <button type="submit" class="btn btn-success btn-lg">Enviar</button>
-                            </div>
-                        </div>
-                    </form>
+                   	<form action="mail.php" method="POST">
+            			<p>Nome</p> <input type="text" name="name">
+            			<p>Email</p> <input type="text" name="email">
+            			<p>Mensagem</p><textarea name="message" rows="6" cols="25"></textarea><br />
+            			<input type="submit" value="Enviar">
+            			<input type="reset" value="Limpar">
+          		</form>
                 </div>
             </div>
         </div>
